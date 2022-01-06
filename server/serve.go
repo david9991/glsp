@@ -3,9 +3,9 @@ package server
 import (
 	"io"
 
-	"github.com/gorilla/websocket"
 	"github.com/sourcegraph/jsonrpc2"
 	wsjsonrpc2 "github.com/sourcegraph/jsonrpc2/websocket"
+	"github.com/gorilla/websocket"
 	"github.com/tliron/kutil/logging"
 )
 

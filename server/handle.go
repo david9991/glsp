@@ -4,8 +4,8 @@ import (
 	contextpkg "context"
 	"fmt"
 
-	"github.com/sourcegraph/jsonrpc2"
 	"github.com/tliron/glsp"
+	"github.com/sourcegraph/jsonrpc2"
 )
 
 // See: https://github.com/sourcegraph/go-langserver/blob/master/langserver/handler.go#L206
