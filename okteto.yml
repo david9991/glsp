@@ -1,18 +1,14 @@
 name: glsp
 autocreate: true
+namespace: default
 image: okteto/golang:1
 command: bash
 securityContext:
   capabilities:
     add:
-    - SYS_PTRACE
+      - SYS_PTRACE
 volumes:
-- /go/pkg/
-- /root/.cache/go-build/
-- /go
-- /.vscode-server
-- /root/go
-- /root/.vscode-server
+  - /go
+  - /root
 sync:
-- .:/usr/src/app
-
+  - .:/usr/src/app
